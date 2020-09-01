@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Cache and logs (Symfony2)
 /app/cache/*
 /app/logs/*
@@ -56,3 +57,15 @@ composer.lock
 symfony.lock
 ###< symfony/framework-bundle ###
 >>>>>>> [BACKEND] add seeding words to database
+=======
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+>>>>>>> Add initial set of files
