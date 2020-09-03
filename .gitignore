@@ -30,6 +30,7 @@
 !bin/console
 !bin/symfony_requirements
 /vendor/
+<<<<<<< HEAD
 
 # Assets and user uploads
 /web/bundles/
@@ -50,3 +51,8 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+=======
+composer.lock
+symfony.lock
+###< symfony/framework-bundle ###
+>>>>>>> [BACKEND] add seeding words to database
