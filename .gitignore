@@ -67,5 +67,7 @@ symfony.lock
 /public/bundles/
 /var/
 /vendor/
+composer.lock
+symfony.lock
 ###< symfony/framework-bundle ###
 >>>>>>> Add initial set of files
