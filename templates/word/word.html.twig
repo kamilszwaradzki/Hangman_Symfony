@@ -49,8 +49,7 @@
             console.log(numberOfRecords);
             myId = Math.floor(Math.random() * Math.floor(numberOfRecords));
             $.ajax({
-                url: "/modified",
-                data: {id:myId}
+                url: "/word/"+myId,
             })
             .done(function(msg) {
                 console.log(msg);
@@ -139,8 +138,7 @@
             $(this).addClass("hidden");
             var indexes = [];
             $.ajax({
-                url: '/contain',
-                data: {id:myId,letter:searchStr} 
+                url: "/word/"+myId+'/'+searchStr, 
             })
             .done(function (data){
                 indexes = data; // type array
@@ -168,8 +166,7 @@
                         $('#letters').hide();
                         $("#buttons").append('<h1 class="ui red header" style="text-align: center;">Game Over!</h1>');
                         $.ajax({
-                        url: '/wholeword',
-                        data: {id:myId}
+                        url: '/word/'+myId+'/show',
                         })
                         .done(function (data){
                             $("#ShowMe").text("The word I mean is: "+data);
