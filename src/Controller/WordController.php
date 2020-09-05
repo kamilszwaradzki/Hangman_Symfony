@@ -66,6 +66,13 @@ class WordController extends AbstractController
         }
         else if(isset($letters) && $letter === 'show')
         {
+            /* 
+               !=================== TODO ===========================!
+               !     add validation if user is loose                !
+               !     info if user is loose must be in server-side   !
+               !================== END TODO ========================! 
+            */
+
             $letters = $this->getDoctrine()
             ->getRepository(Word::class)
             ->find($id)->getLetters();
